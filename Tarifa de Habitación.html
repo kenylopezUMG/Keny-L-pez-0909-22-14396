@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Lato:wght@100;300;400;700&family=Teko:wght@300&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Fonda escondida</title>
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+
+    <header>
+        <div class="encabezado">
+            <nav class="menuPrincipal navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img id="logo" src="../Galeria/LogoSinFondo.png" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="barra offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Fonda escondida</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li><a href="../index.html">Inicio</a></li>
+                                <li><a href="./servicios.html">Servicios</a></li>
+                                <li><a href="./ubicaciones.html">Ubicaciones</a></li>
+                                <li><a href="./reservas.html">Reservas</a></li>
+                                <li><a href="./contacto.html">Contacto</a></li>
+                            </ul>
+                        </div>
+                        <p data-bs-dismiss="offcanvas">¡Bienvenido! / ¡Welcome!</p>
+                        <img data-bs-dismiss="offcanvas" src="../Galeria/saludo.png" alt="saludo inicial">
+                    </div>
+                </div>
+            </nav>
+            <form class="reservasInicio">
+                <div class="ubiDepto">
+                    <label for="">Ubicacion</label>
+                    <select name="Ubicacion" id="Ubicacion">
+                        <option value="Seleccionar">Seleccionar</option>
+                        <option value="PalermoApartments">Rio dulce</option>
+                        <option value="Recoleta Plaza">Livingston</option>
+                        <option value="Ayres de Recoleta">Fonda escondida de Recoleta Uriburu</option>
+                    </select>
+                </div>
+                <div class="checkin">
+                    <label for="">Check-in</label>
+                    <input type="date">
+                </div>
+                <div class="checkout">
+                    <label for="">Check-out</label>
+                    <input type="date">
+                </div>
+                <div class="tipoHabitacion">
+                    <label for="">Tipo de Habitacion</label>
+                    <select name="Tipo de Habitacion" id="Tipo de Habitacion">
+                        <option value="Seleccionar">Seleccionar</option>
+                        <option value="Doble">Clasica</option>
+                        <option value="Triple">Doble</option>
+                        <option value="Cuadruple">Suite</option>
+                    </select>
+                </div>
+                <div class="tarifas">
+                    <input type="submit" value="Ver Tarifas">
+                </div>
+            </form>
+        </div>
+    </header>
+
+
+    <!-- Titulo de la Pagina -->
+
+    <div class="seccionMenu">
+            <p class="tituloPrincipal">RESERVAS</p>
+            <h1>RESERVA AHORA TU ESTADIA EN Fonda escondida</h1>
+        </div>
+    </div>
+
+
+    <!-- Reservas -->
+
+    <main>
+
+<!-- Formulario Inicial -->
+        <form class="reservas">
+            <div class="ubi">
+                <label for="">Ubicacion</label>
+                <select name="Ubicacion" id="Ubicacion">
+                    <option value="PalermoApartments">Río Dulce</option>
+                    <option value="Recoleta Plaza">El estor</option>
+                    <option value="Ayres de Recoleta">Morales</option>
+                </select>
+            </div>
+            <div class="checki">
+                <label for="">Check-in</label>
+                <input type="date">
+            </div>
+            <div class="checko">
+                <label for="">Check-out</label>
+                <input type="date">
+            </div>
+            <div class="depto">
+                <label for="">Tipo de Habitacion</label>
+                <select name="Tipo de Habitacion" id="Tipo de Habitacion">
+                    <option value="Seleccionar">Seleccionar</option>
+                    <option value="Doble">Doble</option>
+                    <option value="Triple">Triple</option>
+                    <option value="Cuadruple">Cuadruple</option>
+                </select>
+            </div>
+        </form>
+
+<!-- Tarifario -->
+        <div class="input col-12">
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Ver Tarifas
+            </a>
+            <div class="collapse" id="collapseExample">
+                <p>Seleccioná una Tarifa</p>
+                <div class="cajaTarifa card card-body">
+                    <div class="form-check">
+                        <input class="seleccionador form-check-input" type="radio" name="flexRadioDefault"
+                            id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="../Galeria/Logo.jpg" class="logocard img-fluid rounded-start"
+                                            alt="logo reserva">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="tarifario card-body">
+                                            <h5 class="card-title">Tarifa Standard</h5>
+                                            <li class="card-text"><img
+                                                    src="https://cdn-icons-png.flaticon.com/512/2366/2366518.png"
+                                                    alt="desayuno"> Desayuno: No incluido</li>
+                                            <li class="card-text"><img
+                                                    src="https://cdn-icons-png.flaticon.com/512/254/254613.png"
+                                                    alt="wifi"> Wifi: WIFI de uso recreativo, gratuito en todo el
+                                                establecimiento.</li>
+                                            <li class="card-text"><img
+                                                    src="https://cdn-icons-png.flaticon.com/512/994/994410.png"
+                                                    alt="atencion"> Atención personalizada</li>
+                                            <li class="card-text"><img
+                                                    src="https://cdn-icons-png.flaticon.com/512/1077/1077976.png"
+                                                    alt="pago"> Pago en destino: El pago de la estadía se hará al
+                                                momento del check-in. Solo se solicita tarjeta de crédito a modo de
+                                                garantía, no se realizará cobro anticipado.</li>
+                                            <li class="card-text"><img
+                                                    src="https://cdn-icons-png.flaticon.com/512/961/961743.png"
+                                                    alt="cancelacion"> Política de cancelación: Cancelación GRATUITA
+                                                hasta
+                                                el dia del checkin hasta las 14hs</li>
+                                            <li class="card-text"><img
+                                                    src="https://cdn-icons-png.flaticon.com/512/2168/2168741.png"
+                                                    alt="taxes"> Impuestos: 21% Impuestos no incluidos</li>
+                                            <div class="precio">
+                                                <h4>120 USD por noche</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="seleccionador form-check-input" type="radio" name="flexRadioDefault"
+                            id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="../Galeria/Logo.jpg" class="logocard img-fluid rounded-start"
+                                            alt="logo reserva">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="tarifario card-body">
+                                            <h5 class="card-title">Tarifa No Reembolsable</h5>
+                                            <li class="card-text"><img
+                                                    src="https://cdn-icons-png.flaticon.com/512/2366/2366518.png"
+                                                    alt="desayuno"> Desayuno: No incluido</li>
+                                            <li class="card-text"><img
+                                                    src="https://cdn-icons-png.flaticon.com/512/254/254613.png"
+                                                    alt="wifi"> Wifi: WIFI de uso recreativo, gratuito en todo el
+                                                establecimiento.</li>
+                                            <li class="card-text"><img
+                                                    src="https://cdn-icons-png.flaticon.com/512/994/994410.png"
+                                                    alt="atencion"> Atención personalizada</li>
+                                            <li class="card-text"><img
+                                                    src="https://cdn-icons-png.flaticon.com/512/1077/1077976.png"
+                                                    alt="pago"> Pago anticipado: El pago de la estadía se realizará
+                                                el mismo día en que se confirme la reserva. El mismo se acreditará en su
+                                                tarjeta de crédito. Si prefiere otro método de pago, debe indicarlo en
+                                                las notas al realizar la reserva.</li>
+                                            <li class="card-text"><img
+                                                    src="https://cdn-icons-png.flaticon.com/512/961/961743.png"
+                                                    alt="cancelacion"> Política de cancelación: Se cobrara la tarifa en su totalidad luego de un plazo de una Hora de realizada la reserva SIN REEMBOLSO</li>
+                                            <li class="card-text"><img
+                                                    src="https://cdn-icons-png.flaticon.com/512/2168/2168741.png"
+                                                    alt="taxes"> Impuestos: 21% Impuestos no incluidos</li>
+                                            <div class="precio">
+                                                <h4>90 USD por noche</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Formulario de Reservas -->
+        <form class="formularioReserva row g-3">
+            <div>
+                <p>Completa el Formulario para terminar tu reserva</p>
+            </div>
+            <div class="col-md-6">
+                <label for="inputApellido4" class="form-label">Nombre</label>
+                <input type="nombre" class="form-control" id="inputNombre4" placeholder="Juan">
+            </div>
+            <div class="col-md-6">
+                <label for="inputApellido4" class="form-label">Apellido</label>
+                <input type="apellido" class="form-control" id="inputApellido4" placeholder="Perez">
+            </div>
+            <div class="col-12">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="text" class="form-control" id="inputEmail" placeholder="ejemplo@fondaescondida.com">
+            </div>
+            <div class="col-12">
+                <label for="inputTelefono" class="form-label">Número de Teléfono</label>
+                <input type="number" class="form-control" id="inputTelefono" placeholder="+502 4565-7985">
+            </div>
+            <div class="col-md-6">
+                <label for="inputID" class="form-label">DNI / Pasaporte</label>
+                <input type="number" class="form-control" id="inputID" placeholder="ID / Passport">
+            </div>
+            <div class="col-md-4">
+                <label for="inputdeptos" class="form-label">Tipo de habitacion</label>
+                <select id="inputdeptos" class="form-select">
+                    <option selected>Selecciona Tipo de Habitación</option>
+                    <option>casual</option>
+                    <option>Doble</option>
+                    <option>Suite</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="check form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Recibir correo de confirmación
+                    </label>
+                </div>
+            </div>
+            <div class="botonReserva col-12">
+                <button type="submit" class="btn btn-primary">Reservar</button>
+            </div>
+        </form>
+
+
+    </main>
+
+
+    <!-- Seccion de servicios -->
+
+    <footer>
+        <section class="tituloFooter">
+            <h3>Fonda escondida</h3>
+        </section>
+        <div>
+            <div class="menuFooter">
+                <a href="../index.html"><img class="imgFooter" src="../Galeria/LogoSinFondo.png" alt=""></a>
+                <div>
+                    <ul>
+                        <li><a href="./servicios.html">Servicios</a></li>
+                        <li><a href="./ubicaciones.html">Ubicaciones</a></li>
+                        <li><a href="./reservas.html">Reservas</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="redesFooter">
+                <p>Redes Sociales</p>
+                <li>
+                    <div>
+                        <div class="redes"><a target="_blank"
+                                href="https://api.whatsapp.com/send?phone=5491127122739"><img
+                                    src="https://cdn-icons-png.flaticon.com/512/3938/3938058.png" alt="whatsapp"></a>
+                        </div>
+                        <div class="redes"><a target="_blank"
+                                href="https://www.instagram.com/ayresapartments/?utm_medium=copy_link&hl=am-et"><img
+                                    src="https://cdn-icons-png.flaticon.com/512/1409/1409946.png" alt="instagram"></a>
+                        </div>
+                        <div class="redes"><a target="_blank"
+                                href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><img
+                                    src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="correo"></a></div>
+                    </div>
+                </li>
+                <li>+502 4568-4826</li>
+                <li>Pto. Barrios, Izabal</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
